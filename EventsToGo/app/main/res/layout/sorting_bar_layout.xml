@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sortingBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Date Spinner -->
+    <Spinner
+        android:id="@+id/spinnerDate"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1" />
+
+    <!-- Price Spinner -->
+    <Spinner
+        android:id="@+id/spinnerPrice"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1" />
+
+    <!-- Availability Spinner -->
+    <Spinner
+        android:id="@+id/spinnerIsAvailable"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="20dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/themeColor"
+        android:text="APPLY"/>
+
+    <!-- Category Spinner
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1" />
+
+    Language Spinner
+    <Spinner
+        android:id="@+id/spinnerLanguage"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1" />-->
+</LinearLayout>

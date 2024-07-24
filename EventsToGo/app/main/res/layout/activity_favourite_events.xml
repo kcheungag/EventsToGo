@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".screens.FavouriteEvents">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/themeColor"
+            android:padding="24dp"
+            android:text="Favourites"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favorite Events"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/themeColor"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/tvNoFavEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NO FAVORITES"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_fav_events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/row_layout_rv_registered_events" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favorite Organizers"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/themeColor"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="80dp"/>
+
+        <TextView
+            android:id="@+id/tvNoFavOrg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NO FAVORITES"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_fav_organizers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/row_layout_rv_fav_organizers" />
+    </LinearLayout>
+</ScrollView>

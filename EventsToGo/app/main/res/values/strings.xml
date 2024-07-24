@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Events To Go</string>
+    <string name="fake_reserve">Log-In To Reserve</string>
+    <string name="real_reserve">Reserve</string>
+    <string name="isAvailable_true">Active</string>
+    <string name="isAvailable_false">Inactive</string>
+    <string name="free">Free</string>
+    <string name="policy_free">Not applicable.</string>
+    <string name="policy_paid">Free cancellation before a week of notice.</string>
+
+
+
+
+
+
+
+</resources>

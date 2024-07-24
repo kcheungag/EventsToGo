@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.OrganizerEventsViewDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/menu_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/themeColor"
+            app:title="Event"
+            app:titleTextColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/llEditableEventDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvEAvailability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OPEN"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tvEID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="(1234-5678-9012)"
+                    android:textColor="@color/subtitle" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ad Display" />
+
+            <TextView
+                android:id="@+id/tvEAdDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="1 Day Christmas bazaar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Description" />
+
+            <TextView
+                android:id="@+id/tvEDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Sample Description. the quick brown fox jumps over the lazy dog." />
+
+            <TextView
+                android:id="@+id/tvEStartSchedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Start: Sat Dec 23 08:00:00 EST 2023" />
+
+            <TextView
+                android:id="@+id/tvEEndSchedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End: Sat Dec 23 23:59:00 EST 2023" />
+
+            <TextView
+                android:id="@+id/tvEPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Price: $99.99" />
+
+            <TextView
+                android:id="@+id/tvESlots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of Slots: 999" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Address" />
+
+            <TextView
+                android:id="@+id/tvEAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Sample Address. the quick brown fox jumps over the lazy dog." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Image"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imgEVDImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxHeight="200dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/tvEImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="replace_with_imageview.png"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnEViewAttendees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/themeColor"
+                android:text="VIEW ATTENDEES" />
+
+            <Button
+                android:id="@+id/btnEUpdateEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/themeColor"
+                android:text="EDIT EVENT" />
+
+            <Button
+                android:id="@+id/btnEDeleteEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:text="DELETE EVENT" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

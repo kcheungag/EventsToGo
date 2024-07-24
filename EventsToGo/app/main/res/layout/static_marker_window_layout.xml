@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/ivDirection"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/ic_menu_directions" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvEventBuilding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Event Title"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/ivDirection"
+            android:layout_alignBaseline="@id/ivDirection"
+            android:textAlignment="center"/>
+
+
+    <TextView
+            android:id="@+id/tvEventAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Event DateTime"
+            android:textColor="#000000"
+            android:textSize="10sp"
+        android:layout_below="@id/tvEventBuilding"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/ivDirection"
+        android:textAlignment="center"/>
+
+
+</LinearLayout>
+</RelativeLayout>

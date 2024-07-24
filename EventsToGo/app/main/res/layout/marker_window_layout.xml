@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- 1. Event Image -->
+    <ImageView
+        android:id="@+id/ivEvent"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/your_event_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvEventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Event Title"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvEventDateStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Event DateTime"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvEventDateEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Event DateTime"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:layout_marginTop="8dp"/>
+
+
+
+       <!-- <Button
+            android:id="@+id/btnOpenEventDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View More"
+            android:onClick="openEventDetails" />
+    </LinearLayout> -->
+
+
+</LinearLayout>
+</LinearLayout>

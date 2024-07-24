@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mi_favorites"
+        android:orderInCategory="100"
+        android:title="Favorites" />
+
+    <item
+        android:id="@+id/mi_reg_events"
+        android:orderInCategory="100"
+        android:title="Registered Events" />
+
+    <item
+        android:id="@+id/miOEvents"
+        android:orderInCategory="100"
+        android:title="My Events" />
+
+    <item
+        android:id="@+id/mi_user_account"
+        android:orderInCategory="100"
+        android:title="My Account" />
+
+    <item
+        android:id="@+id/mi_logout"
+        android:orderInCategory="100"
+        android:title="Logout" />
+</menu>

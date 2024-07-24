@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Back and Circled Icons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!-- Back Icon -->
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_back" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|end">
+                <!-- Star Icon -->
+                <ImageView
+                    android:id="@+id/ivStar"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_star" />
+
+                <!-- Share Icon -->
+                <ImageView
+                    android:id="@+id/ivShare"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@android:drawable/ic_menu_share" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/ivPropertyImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivPropertyImage">
+
+            <!-- Sales Label -->
+            <TextView
+                android:id="@+id/tvSales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="4dp"
+                android:text="Sales end soon"
+                android:textStyle="italic"
+                android:background="#FFC107"
+                android:textColor="#000000"
+                android:visibility="visible"
+                android:textAlignment="viewStart"/>
+
+            <!-- Quantity Label -->
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tvSales"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/tvSales"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="4dp"
+                android:text="Quantity"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/themeColor"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Property Name -->
+        <TextView
+            android:id="@+id/tvEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Property Name"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp"/>
+
+        <!-- 1. Organiser -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEventName"
+            android:layout_marginTop="16dp">
+
+            <!-- Avatar Image -->
+            <ImageView
+                android:id="@+id/ivOrganiser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@android:drawable/ic_dialog_email"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Organiser Name -->
+            <TextView
+                android:id="@+id/tvOrganiserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organiser Name"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_toEndOf="@id/ivOrganiser"
+                android:layout_marginEnd="8dp"
+                />
+
+            <!-- Follow Button -->
+            <Button
+                android:id="@+id/btnFollow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/themeColor"
+                android:text="Follow"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+        <!-- 2. DateTime -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvOrganiserName"
+            android:layout_marginTop="16dp">
+
+            <!-- Icon Calendar -->
+            <ImageView
+                android:id="@+id/ivCalendarIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/ic_menu_today" />
+
+            <!-- Event Date -->
+            <TextView
+                android:id="@+id/tvEventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/ivCalendarIcon"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/ivCalendarIcon"
+                android:text="Event Date"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <!-- Event Time -->
+            <TextView
+                android:id="@+id/tvEventTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvEventDate"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/ivCalendarIcon"
+                android:text="Event Time"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEventTime"
+            android:layout_marginTop="16dp">
+
+            <!-- Icon Location Pin -->
+            <ImageView
+                android:id="@+id/ivLocationIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_mylocation"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <!-- Event Venue -->
+            <TextView
+                android:id="@+id/tvEventVenue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Venue"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_toEndOf="@id/ivLocationIcon"
+                android:layout_alignBaseline="@id/ivLocationIcon"
+                android:layout_marginStart="8dp"/>
+
+            <!-- Event Address -->
+            <TextView
+                android:id="@+id/tvEventAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Address"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_below="@id/tvEventVenue"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/ivLocationIcon"
+                android:layout_marginStart="8dp"/>
+        </RelativeLayout>
+
+        <!-- 4. EventPrice -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEventAddress"
+            android:layout_marginTop="16dp">
+
+            <!-- Icon  -->
+            <ImageView
+                android:id="@+id/ivPriceIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_price_tag"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <!-- Refund Policy Label -->
+            <TextView
+                android:id="@+id/tvPriceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Price"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_toEndOf="@id/ivPriceIcon"
+                android:layout_alignBaseline="@id/ivPriceIcon"
+                android:layout_marginStart="8dp"/>
+
+            <!-- Refund Policy Content -->
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Refund Policy"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_below="@id/tvPriceLabel"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/ivPriceIcon"
+                android:layout_marginStart="8dp"/>
+        </RelativeLayout>
+
+        <!-- 5. RefundPolicy -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEventAddress"
+            android:layout_marginTop="16dp">
+
+            <!-- Icon  -->
+            <ImageView
+                android:id="@+id/ivDollarIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_month"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <!-- Refund Policy Label -->
+            <TextView
+                android:id="@+id/tvRefundPolicyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refund Policy"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_toEndOf="@id/ivDollarIcon"
+                android:layout_alignBaseline="@id/ivDollarIcon"
+                android:layout_marginStart="8dp"/>
+
+            <!-- Refund Policy Content -->
+            <TextView
+                android:id="@+id/tvRefundPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Refund Policy"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_below="@id/tvRefundPolicyLabel"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/ivDollarIcon"
+                android:layout_marginStart="8dp"/>
+        </RelativeLayout>
+
+
+        <!-- 5. Decoration Line Break -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="#000000"
+            android:layout_below="@id/tvRefundPolicy"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- 6. About this event -->
+        <TextView
+            android:id="@+id/tvAboutThisEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About this event"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_below="@id/tvRefundPolicy"
+            android:layout_marginTop="16dp"/>
+
+        <!-- 7. Event Description -->
+        <TextView
+            android:id="@+id/tvEventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Event Description"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_below="@id/tvAboutThisEvent"
+            android:layout_marginTop="8dp"/>
+
+        <!-- 8. Decoration Line Break -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="#000000"
+            android:layout_below="@id/tvEventDescription"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- 9. Location -->
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"/>
+
+        <!-- 10. Map -->
+        <!-- Map View or Map Fragment can be added here based on your implementation -->
+        <!-- Map
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapViewEventDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight = "1"
+            android:layout_below="@id/tvLocation"
+            android:layout_marginTop="8dp"
+            android:visibility="visible" />-->
+            <!--Fragment-->
+        <FrameLayout
+            android:id="@+id/mapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:visibility="visible" />
+
+        <!-- Contact Button -->
+        <Button
+            android:id="@+id/btnFakeReserve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Contact"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnReserve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/themeColor"
+            android:text="Contact"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</ScrollView>
+
+

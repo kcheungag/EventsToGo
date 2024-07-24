@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8sp">
+
+    <TextView
+        android:id="@+id/tvOEventTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EVENT NUMBER ONE - #1234567890"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvOEventLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City, Country" />
+
+    <TextView
+        android:id="@+id/tvOEventScheduleStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start: Dec 25, 2023 08:00:00" />
+
+    <TextView
+        android:id="@+id/tvOEventScheduleEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End: Dec 25, 2023 18:00:00" />
+
+    <TextView
+        android:id="@+id/tvOEventSlotsLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slots Left: 999" />
+
+    <TextView
+        android:id="@+id/tvOEventPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$100.00" />
+
+    <TextView
+        android:id="@+id/tvOEventStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OPEN"
+        android:textStyle="italic"/>
+
+</LinearLayout>
