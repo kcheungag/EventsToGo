@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "943081070270",
+    "project_id": "mads4006-a33c7",
+    "storage_bucket": "mads4006-a33c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943081070270:android:450cc984659dc94d4d88ef",
+        "android_client_info": {
+          "package_name": "com.example.eventstogo_group6"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1GYr6AC7psaPTEI4UfMOykpzzIGKH0ZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
